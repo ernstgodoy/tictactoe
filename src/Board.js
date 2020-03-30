@@ -19,7 +19,7 @@ class Board extends React.Component{
 
 
     winningCombos = () => {
-        const {playerX, playerO, squares, counter, gameWinO, gameWinX, gameTie} = this.state
+        const {playerX, playerO, squares} = this.state
         let winningArrays = [
             [0,1,2],
             [3,4,5],

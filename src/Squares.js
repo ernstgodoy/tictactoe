@@ -6,10 +6,11 @@ class Squares extends React.Component{
         super(props)
     }
 
-    handleClick = (index) => {
-        this.props.squareLocation(this.props.index)
-        this.props.squareLocation(this.props.counter)
-        this.props.winningCombos(this.props.value)
+    handleClick = () => {
+        const {index, counter, value, squareLocation, winningCombos} = this.props
+        squareLocation(index)
+        squareLocation(counter)
+        winningCombos(value)
     }
 
     render(){
